@@ -1,0 +1,519 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+
+<link href="img/---.ico" rel="shortcut icon">
+    
+<meta name="theme-color" content="#---">
+<meta name="msapplication-navbutton-color" content="#---">
+<meta name="apple-mobile-web-app-status-bar-style" content="#---">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link media="only screen and (max-width:991px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+<link media="only screen and (max-width:767px)" rel="stylesheet" type="text/css" href="css/mobile.css">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="fonts/roboto-slab/roboto.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/sinister.css">
+<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script>
+<script>wow = new WOW({animateClass:'animated',offset:100,callback:function(box){
+console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")} });wow.init();
+document.getElementById('moar').onclick = function() {var section = document.createElement('section');
+section.className = 'section--purple wow fadeInDown';this.parentNode.insertBefore(section, this);};
+</script>
+<script>
+$(function(){$('.smoothScroll').click(function(){if (location.pathname.replace(/^\//, '')==
+this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');if (target.length) {
+$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});}); 
+</script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            if (document.documentElement.clientWidth < 991) {
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '100%');
+                    $(".inp3").css('padding-right' , '10px');
+                    $(".inp3").css('padding-left' , '10px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '95px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else if(document.documentElement.clientWidth < 677){
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '25px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else{
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '169px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel {
+            padding: 6px 0 !important;
+            display: none;
+            -webkit-transition: all 0s ease 0s;
+            -moz-transition: all 0s ease 0s;
+            -o-transition: all 0s ease 0s;
+            transition: all 0s ease 0s;
+
+        }
+    </style>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 400px;
+            margin: 20px auto;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width: 250px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center" id="panel">
+    <a href="#"><button class="btn8">فروشگاه</button></a>
+    <a href="#"><button class="btn8">گیفت کارت</button></a>
+    <a href="#"><button class="btn8">اپل آیدی</button></a>
+    <a href="#"><button class="btn8">لوازم جانبی</button></a>
+    <a href="#"><button class="btn8">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn8">وبلاک</button></a>
+    <a href="#"><button class="btn8">قیمت روز</button></a>
+</div>
+<div class="col-md-12 col-xs-12 col-sm-12 text-center div1">
+
+    <i id="flip" class="fa fa-bars icn1"></i>
+
+    <img class="img1" src="img/font-icone.png" />
+    <a href="#"><button class="btn1">فروشگاه</button></a>
+    <a href="#"><button class="btn1">گیفت کارت</button></a>
+    <a href="#"><button class="btn1">اپل آیدی</button></a>
+    <a href="#"><button class="btn1">لوازم جانبی</button></a>
+    <a href="#"><button class="btn1">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn1">وبلاک</button></a>
+    <a href="#"><button class="btn1">قیمت روز</button></a>
+
+    <a href="#"><img class="img2" src="img/shopping-basket.png" /></a>
+    <a href="#"><img class="img2" src="img/user.png" /></a>
+    <img class="img16" src="img/searchh.svg" />
+
+
+        <input class="inp3" type="text" placeholder="جستجو" />
+        <img class="img17" src="img/close.svg" />
+
+
+</div>
+<!--<div class="col-md-12 col-xs-12 col-sm-12 text-center div2">-->
+    <!--<div class="div3">-->
+        <!--<button class="btn2"><img class="img3" src="img/search.svg" /></button>-->
+        <!--<div class="div4"></div>-->
+        <!--<div class="div5">-->
+            <!--<input class="inp1" type="text" placeholder="جستجو" />-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+<!--</div>-->
+
+
+
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div37">
+    <p class="p34">اپلیکیشن و بازی iOS</p>
+    <div class="col-md-12 col-sm-12 col-xs-12 div38 text-right">
+        <div class="col-md-12 col-sm-12 col-xs-12 div0">
+            <h3>دانلود بازی !Merged برای آیفون، آیپاد و آیپد</h3>
+            <fieldset class="rating1">
+                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                <p class="p41">از 23 رای</p>
+            </fieldset>
+            <p class="p35">!Merged</p>
+            <p class="p36"> سازنده: <span class="span1">Gram Games</span></p>
+            <span class="span2">آیفون</span>
+            <span class="span2">سرگرمی</span>
+            <span class="span2">آیپد</span>
+            <span class="span2">آیفون</span>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 div0">
+
+            <div class="col-md-3 col-sm-12 col-xs-12 text-center div0 div41">
+                <img class="img21" src="img/app/b2ap3_medium_Merged.jpg" />
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <button class="btn11">دانلود مستقیم</button>
+                </div>
+
+
+                <p class="p39"> قیمت : رایگان!</p>
+                <p class="p39"> دسته‌بندی: بازی و سرگرمی</p>
+                <p class="p39"> انتشار :11 اردیبهشت 1396</p>
+                <p class="p39"> حجم :95.1 مگابایت</p>
+                <p class="p39"> سازگاری: آیپاد تاچ آیپد آیفون</p>
+
+
+
+            </div>
+
+
+
+            <div class="col-md-9 col-sm-12 col-xs-12 div39 div0">
+                <h4 class="p37">توضیحات اپلیکیشن :</h4>
+
+                <p class="p38">
+                    در این بازی، شما باید سه عدد از تاس‌هایی که هم شماره و هم رنگ هستند را در کنار یکدیگر قرار دهید تا از بین بروند و امتیاز کسب کنید. این کنار هم قرار گرفتن تاس‌ها می تواند هم به صورت عمودی، افقی و یا مایل اتفاق بیافتد.
+                </p>
+                <p class="p38">
+                    قدرت ذهن و تفکر خود را در این بازی مورد آزمایش قرار دهید و ببینید که تا چه حد قادر به پیشرفت هستید.
+                </p>
+
+                <h4 class="p37">امکانات و قابلیت‌های نسخه جدید:</h4>
+                <p class="p38">
+                  1. رفع ایرادات نرم‌افزاری
+                </p>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 div40 div0">
+                    <p class="p40">تصاویر اپلیکیشن : </p>
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/app/Merged-1.jpg" /></div>
+                            <div class="swiper-slide"><img src="img/app/Merged-1.jpg" /></div>
+                            <div class="swiper-slide"><img src="img/app/Merged-1.jpg" /></div>
+                            <div class="swiper-slide"><img src="img/app/Merged-1.jpg" /></div>
+                            <div class="swiper-slide"><img src="img/app/Merged-1.jpg" /></div>
+                            <div class="swiper-slide"><img src="img/app/Merged-1.jpg" /></div>
+                        </div>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div42">
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <p class="p11">اپلیکیشن‌های مرتبط :</p>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+
+            <div id="owl-demo3" class="owl-carousel owl-theme">
+
+                <div class="item2">
+                    <img class="img15" src="img/skype.png" />
+                    <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                    <button class="btn6">دانلود برنامه</button>
+                </div>
+                <div class="item2">
+                    <img class="img15" src="img/skype.png" />
+                    <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                    <button class="btn6">دانلود برنامه</button>
+                </div>
+
+                <div class="item2">
+                    <img class="img15" src="img/skype.png" />
+                    <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                    <button class="btn6">دانلود برنامه</button>
+                </div>
+
+                <div class="item2">
+                    <img class="img15" src="img/skype.png" />
+                    <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                    <button class="btn6">دانلود برنامه</button>
+                </div>
+
+                <div class="item2">
+                    <img class="img15" src="img/skype.png" />
+                    <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                    <button class="btn6">دانلود برنامه</button>
+                </div>
+
+                <div class="item2">
+                    <img class="img15" src="img/skype.png" />
+                    <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                    <button class="btn6">دانلود برنامه</button>
+                </div>
+
+
+
+
+
+            </div>
+            <button class="owlnext3 btn0"><img class="img12" src="img/right-arrow.png"></button>
+            <button class="owlprev3 btn0"><img class="img13" src="img/left-arrow.png"></button>
+
+        </div>
+
+
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 div43">
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <p class="p11">پرسش و پاسخ :</p>
+        </div>
+
+
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center div27">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div30">
+                    <p class="p25">سجاد فهوری</p>
+                    <p class="p26">22:55 96/7/22</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div31">
+                    <p class="p24">
+                        لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center div27">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div30">
+                    <p class="p25">سجاد فهوری</p>
+                    <p class="p26">22:55 96/7/22</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div31">
+                    <p class="p24">
+                        لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center div27">
+            <div class="col-md-6 col-sm-12 col-xs-12 text-right">
+                <label class="lbl1">آدرس ایمیل</label>
+                <input type="text" class="inp4" />
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 text-right">
+                <label class="lbl1">نام و نام خانوادگی</label>
+                <input type="text" class="inp4" />
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+                <textarea class="inp5" rows="9" placeholder="متن و نظر شما ..."></textarea>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <button class="btn9">ثبت و ارسال کامنت</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div22">
+    <p class="p18"> ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم.</p>
+
+    <p class="p19"><i class="fa fa-envelope icn2"></i></p>
+    <p class="p19"><i class="fa fa-phone icn2"></i></p>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div23 div0 text-center">
+    <p class="p20">خبرنامه وبسایت</p>
+    <p class="p21">با عضویت در خبرنامه اپل اِن آی سی میتوانید از تازه ترین اخبار و مطالب وبسایت و همچنین اعلامیه ها و تخفیف های فروشگاه مطلع شوید.</p>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <button class="btn7">اشتراک در خبرنامه</button>
+        <input class="inp2" type="text" placeholder="ایمیل" />
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <a href="#"><i class="fa fa-skype icn3"></i></a>
+        <a href="#"><i class="fa fa-youtube-play icn3"></i></a>
+        <a href="#"><i class="fa fa-facebook-square icn3"></i></a>
+        <a href="#"><i class="fa fa-twitter-square icn3"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square icn3"></i></a>
+        <a href="#"><i class="fa fa-instagram icn3"></i></a>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 text-right div25">
+        
+    </div>
+
+     <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <p class="p23">Copyright © 2017 Apple NIC. All rights reserved.</p>
+
+</div>
+
+<script>
+    function walkNode(node) {
+        if (node.nodeType == 3) {
+            // Do your replacement here
+            node.data = node.data.replace(/\d/g,convert);
+        }
+
+        // Also replace text in child nodes
+        for (var i = 0; i < node.childNodes.length; i++) {
+            walkNode(node.childNodes[i]);
+        }
+    }
+
+    walkNode(document.getElementsByTagName('body')[0]);
+
+    function convert(a){
+        return ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'][a];
+    }
+</script>
+
+<script src="js/swiper.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 20,
+        grabCursor: true
+    });
+</script>
+
+
+<script>
+
+
+    $(document).ready(function() {
+        var owl3= $("#owl-demo3");
+        owl3.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+        });
+        owl3.trigger('owl.play',3500);
+
+        $(".owlnext3").click(function(){
+            owl3.trigger('owl.next');
+        });
+        $(".owlprev3").click(function(){
+            owl3.trigger('owl.prev');
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>

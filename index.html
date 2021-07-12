@@ -1,0 +1,738 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+
+<link href="img/---.ico" rel="shortcut icon">
+    
+<meta name="theme-color" content="#---">
+<meta name="msapplication-navbutton-color" content="#---">
+<meta name="apple-mobile-web-app-status-bar-style" content="#---">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link media="only screen and (max-width:991px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+<link media="only screen and (max-width:767px)" rel="stylesheet" type="text/css" href="css/mobile.css">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="fonts/roboto-slab/roboto.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/sinister.css">
+<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script>
+<script>wow = new WOW({animateClass:'animated',offset:100,callback:function(box){
+console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")} });wow.init();
+document.getElementById('moar').onclick = function() {var section = document.createElement('section');
+section.className = 'section--purple wow fadeInDown';this.parentNode.insertBefore(section, this);};
+</script>
+<script>
+$(function(){$('.smoothScroll').click(function(){if (location.pathname.replace(/^\//, '')==
+this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');if (target.length) {
+$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});}); 
+</script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <script>
+	
+	
+
+
+
+$(function() {
+    var oTop = $('.divto').offset().top - window.innerHeight;
+	
+    $(window).on('scroll.mynamespace',function(){
+
+        var pTop = $(window).scrollTop();
+        if( pTop > oTop ){
+		  $(window).off('scroll.mynamespace');
+           // alert("ok");
+        }
+    });
+});
+	
+
+	
+
+
+
+        $(document).ready(function() {
+            $(".div13").click(function() {
+                $(".div15").show();
+                $(".div15").addClass("animated zoomIn");
+                $(".div14").hide();
+                $(".img11").show();
+                $(".img10").hide();
+                $(".div13").css('background-color' , '#313139');
+                $(".div12").css('background-color' , '#67666C');
+            });
+            $(".div12").click(function() {
+                $(".div15").hide();
+                $(".div14").show();
+                $(".div14").addClass("animated zoomIn");
+                $(".img11").hide();
+                $(".img10").show();
+                $(".div13").css('background-color' , '#67666C');
+                $(".div12").css('background-color' , '#313139');
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            if (document.documentElement.clientWidth < 991) {
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '100%');
+                    $(".inp3").css('padding-right' , '10px');
+                    $(".inp3").css('padding-left' , '10px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '95px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else if(document.documentElement.clientWidth < 677){
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '25px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else{
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '169px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel {
+            padding: 6px 0 !important;
+            display: none;
+            -webkit-transition: all 0s ease 0s;
+            -moz-transition: all 0s ease 0s;
+            -o-transition: all 0s ease 0s;
+            transition: all 0s ease 0s;
+
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center" id="panel">
+    <a href="#"><button class="btn8">فروشگاه</button></a>
+    <a href="#"><button class="btn8">گیفت کارت</button></a>
+    <a href="#"><button class="btn8">اپل آیدی</button></a>
+    <a href="#"><button class="btn8">لوازم جانبی</button></a>
+    <a href="#"><button class="btn8">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn8">وبلاک</button></a>
+    <a href="#"><button class="btn8">قیمت روز</button></a>
+</div>
+<div class="col-md-12 col-xs-12 col-sm-12 text-center div1">
+
+    <i id="flip" class="fa fa-bars icn1"></i>
+
+    <img class="img1" src="img/font-icone.png" />
+    <a href="#"><button class="btn1">فروشگاه</button></a>
+    <a href="#"><button class="btn1">گیفت کارت</button></a>
+    <a href="#"><button class="btn1">اپل آیدی</button></a>
+    <a href="#"><button class="btn1">لوازم جانبی</button></a>
+    <a href="#"><button class="btn1">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn1">وبلاک</button></a>
+    <a href="#"><button class="btn1">قیمت روز</button></a>
+
+    <a href="#"><img class="img2" src="img/shopping-basket.png" /></a>
+    <a href="#"><img class="img2" src="img/user.png" /></a>
+    <img class="img16" src="img/searchh.svg" />
+
+
+        <input class="inp3" type="text" placeholder="جستجو" />
+        <img class="img17" src="img/close.svg" />
+
+
+</div>
+<!--<div class="col-md-12 col-xs-12 col-sm-12 text-center div2">-->
+    <!--<div class="div3">-->
+        <!--<button class="btn2"><img class="img3" src="img/search.svg" /></button>-->
+        <!--<div class="div4"></div>-->
+        <!--<div class="div5">-->
+            <!--<input class="inp1" type="text" placeholder="جستجو" />-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+<!--</div>-->
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center div6 div0">
+    <div id="owl-demo" class="owl-carousel owl-theme">
+
+        <div class="item1" style="background-color: #F2F2F2;">
+            <h2>آیفون ایکس</h2>
+            <p>نسل جدید از آیفون ها</p>
+            <img class="img4" src="img/slide/og.png" />
+            <p class="p3">بررسی اطلاعات بیشتر <i class="fa fa-angle-left "></i></p>
+        </div>
+
+        <div class="item1" style="background-color: #F2F2F2;">
+            <h2>آیفون ایکس</h2>
+            <p>نسل جدید از آیفون ها</p>
+            <img class="img4" src="img/slide/og.png" />
+            <p class="p3">بررسی اطلاعات بیشتر <i class="fa fa-angle-left "></i></p>
+        </div>
+
+        <div class="item1" style="background-color: #F2F2F2;">
+            <h2>آیفون ایکس</h2>
+            <p>نسل جدید از آیفون ها</p>
+            <img class="img4" src="img/slide/og.png" />
+            <p class="p3">بررسی اطلاعات بیشتر <i class="fa fa-angle-left "></i></p>
+        </div>
+
+        <div class="item1" style="background-color: #F2F2F2;">
+            <h2>آیفون ایکس</h2>
+            <p>نسل جدید از آیفون ها</p>
+            <img class="img4" src="img/slide/og.png" />
+            <p class="p3">بررسی اطلاعات بیشتر <i class="fa fa-angle-left "></i></p>
+        </div>
+
+        <div class="item1" style="background-color: #F2F2F2;">
+            <h2>آیفون ایکس</h2>
+            <p>نسل جدید از آیفون ها</p>
+            <img class="img4" src="img/slide/og.png" />
+            <p class="p3">بررسی اطلاعات بیشتر <i class="fa fa-angle-left "></i></p>
+        </div>
+
+    </div>
+    <button class="btn0 btn3"><img class="img5" src="img/slide_right.png"></button>
+    <button class="btn0 btn4"><img class="img6" src="img/slide_left.png"></button>
+
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 text-center div7">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="div8">
+            <img class="img7" onmousedown="return false;" src="img/archive.png" />
+        </div>
+        <h5 class="pbold p1">تحویل در فروشگاه</h5>
+        <p class="p2">بسته به نوع سفارش خود میتوانید در صورت تمایل
+            با تعیین وقت قبلی سفارش خود را در دفتر مرکزی تهران
+            و یا حتی فروشگاه مشهد دریافت نمائید.</p>
+        <p class="p4">اطلاعات بیشتر <i class="fa fa-angle-left "></i></p>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="div8">
+            <img class="img7" onmousedown="return false;" src="img/bag%20(1).png" />
+        </div>
+        <h5 class="pbold p1">تحویل سریع و رایگان</h5>
+        <p class="p2">کلیه سفارشات بالای یک میلیون تومان
+به صورت رایگان و در کمتر از ۴۸ ساعت تحویل داده خواهند شد.</p>
+        <p class="p4">اطلاعات بیشتر <i class="fa fa-angle-left "></i></p>
+    </div>
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div9">
+    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+        <img class="img8" src="img/img%20(1).png" />
+        <p class="p5">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل، مایکروسافت، سونی و ...</p>
+        <button class="btn5">خرید آنلاین</button>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+        <img class="img8" src="img/img%20(2).png" />
+        <p class="p5">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل، مایکروسافت، سونی و ...</p>
+        <button class="btn5">خرید آنلاین</button>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+        <img class="img8" src="img/img%20(4).png" />
+        <p class="p5">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل، مایکروسافت، سونی و ...</p>
+        <button class="btn5">خرید آنلاین</button>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+        <img class="img8" src="img/img%20(3).png" />
+        <p class="p5">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل، مایکروسافت، سونی و ...</p>
+        <button class="btn5">خرید آنلاین</button>
+    </div>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div10 div0">
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div0 div14">
+        <div class="col-md-6 col-sm-12 col-xs-12 div11 text-center">
+            <img class="img9" src="img/img(5).png" />
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 div10">
+            <p class="p6">یشنهاد شکفت انگیز</p>
+            <p class="p9">اپل واچ سری 3 سلولار استیل مشکی با بند میلانس لوپ خاکستری</p>
+            <p class="p7">130000 تومان</p>
+            <p class="p8">120000 تومان</p>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 div0 div15">
+        <div class="col-md-6 col-sm-12 col-xs-12 div11 text-center">
+            <img class="img9" src="img/img(5).png" />
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 div10">
+            <p class="p6">یشنهاد شکفت انگیز</p>
+            <p class="p9">اپل واچ سری 3 سلولار استیل مشکی با بند میلانس لوپ خاکستری</p>
+            <p class="p7">130000 تومان</p>
+            <p class="p8">120000 تومان</p>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div0">
+        <div class="col-md-6 col-sm-6 col-xs-6 text-center div12 div0">اپل واچ سری 3
+            <img class="img10 animated fadeInUp" src="img/arrow.png"/>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 text-center div13 div0">مینی داک
+            <img class="img11 animated fadeInUp" src="img/arrow.png"/>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div16 divto">
+    <p class="p11">پیشنهادات ویژه</p>
+    <p class="p10">+ لیست کامل</p>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <div id="owl-demo1" class="owl-carousel owl-theme">
+            <div class="item2">
+                <img src="img/iphone7-b.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+            <div class="item2">
+                <img src="img/iphone7-b.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+            <div class="item2">
+                <img src="img/iphone7-b.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+            <div class="item2">
+                <img src="img/iphone7-b.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+            <div class="item2">
+                <img src="img/iphone7-b.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+            <div class="item2">
+                <img src="img/iphone7-b.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+
+
+
+        </div>
+        <button class="owlnext1 btn0"><img class="img12" src="img/right-arrow.png"></button>
+        <button class="owlprev1 btn0"><img class="img13" src="img/left-arrow.png"></button>
+
+    </div>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div17"></div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div18">
+
+    <div class="col-md-6 col-sm-12 col-xs-12 div19">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <p class="p15">مقالات آموزشی</p>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 div0 div21 text-right">
+                <img class="img14" src="img/img%20(4).png" />
+                <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 div0 div21 text-right">
+                <img class="img14" src="img/img%20(4).png" />
+                <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 div0 div21 text-right">
+                <img class="img14" src="img/img%20(4).png" />
+                <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 div0 div21 text-right">
+                <img class="img14" src="img/img%20(4).png" />
+                <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 div0 text-center">
+                <p class="p3">مشاهده سایر مقالات <i class="fa fa-angle-left "></i></p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 div20">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <p class="p15">مقالات آموزشی</p>
+        </div>
+
+
+        <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+            <img class="img14" src="img/img%20(4).png" />
+            <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+            <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+            <img class="img14" src="img/img%20(4).png" />
+            <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+            <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+            <img class="img14" src="img/img%20(4).png" />
+            <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+            <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+            <img class="img14" src="img/img%20(4).png" />
+            <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+            <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 div0 text-center">
+            <p class="p3">مشاهده سایر مقالات <i class="fa fa-angle-left "></i></p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div17"></div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div16">
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <p class="p15">اپلیکیشن و بازی ios</p>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <div id="owl-demo2" class="owl-carousel owl-theme">
+
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+
+
+        </div>
+        <button class="owlnext2 btn0"><img class="img12" src="img/right-arrow.png"></button>
+        <button class="owlprev2 btn0"><img class="img13" src="img/left-arrow.png"></button>
+
+    </div>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div17"></div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div16">
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <p class="p15">اپلیکیشن و بازی macOS</p>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <div id="owl-demo3" class="owl-carousel owl-theme">
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+            <div class="item2">
+                <img class="img15" src="img/skype.png" />
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان</p>
+                <button class="btn6">دانلود برنامه</button>
+            </div>
+
+
+
+
+
+        </div>
+        <button class="owlnext3 btn0"><img class="img12" src="img/right-arrow.png"></button>
+        <button class="owlprev3 btn0"><img class="img13" src="img/left-arrow.png"></button>
+
+    </div>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div22">
+    <p class="p18"> ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم.</p>
+
+    <p class="p19"><i class="fa fa-envelope icn2"></i></p>
+    <p class="p19"><i class="fa fa-phone icn2"></i></p>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div23 div0 text-center">
+    <p class="p20">خبرنامه وبسایت</p>
+    <p class="p21">با عضویت در خبرنامه اپل اِن آی سی میتوانید از تازه ترین اخبار و مطالب وبسایت و همچنین اعلامیه ها و تخفیف های فروشگاه مطلع شوید.</p>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <button class="btn7">اشتراک در خبرنامه</button>
+        <input class="inp2" type="text" placeholder="ایمیل" />
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <a href="#"><i class="fa fa-skype icn3"></i></a>
+        <a href="#"><i class="fa fa-youtube-play icn3"></i></a>
+        <a href="#"><i class="fa fa-facebook-square icn3"></i></a>
+        <a href="#"><i class="fa fa-twitter-square icn3"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square icn3"></i></a>
+        <a href="#"><i class="fa fa-instagram icn3"></i></a>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 text-right div25">
+        
+    </div>
+
+     <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <p class="p23">Copyright © 2017 Apple NIC. All rights reserved.</p>
+
+</div>
+
+<script>
+    function walkNode(node) {
+        if (node.nodeType == 3) {
+            // Do your replacement here
+            node.data = node.data.replace(/\d/g,convert);
+        }
+
+        // Also replace text in child nodes
+        for (var i = 0; i < node.childNodes.length; i++) {
+            walkNode(node.childNodes[i]);
+        }
+    }
+
+    walkNode(document.getElementsByTagName('body')[0]);
+
+    function convert(a){
+        return ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'][a];
+    }
+</script>
+
+
+<script>
+
+
+    $(document).ready(function() {
+
+        var owl1 = $("#owl-demo1");
+        var owl2 = $("#owl-demo2");
+        var owl3= $("#owl-demo3");
+
+        owl1.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+
+        });
+        owl2.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+        });
+        owl3.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+        });
+        owl1.trigger('owl.play',3500);
+        owl2.trigger('owl.play',3500);
+        owl3.trigger('owl.play',3500);
+
+
+
+
+
+        $(".owlnext1").click(function(){
+            owl1.trigger('owl.next');
+        });
+        $(".owlprev1").click(function(){
+            owl1.trigger('owl.prev');
+        });
+
+        $(".owlnext2").click(function(){
+            owl2.trigger('owl.next');
+        });
+        $(".owlprev2").click(function(){
+            owl2.trigger('owl.prev');
+        });
+
+        $(".owlnext3").click(function(){
+            owl3.trigger('owl.next');
+        });
+        $(".owlprev3").click(function(){
+            owl3.trigger('owl.prev');
+        });
+
+    });
+
+
+</script>
+<script>
+    $(document).ready(function() {
+        var owl = $("#owl-demo");
+        owl.owlCarousel({
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+        });
+        owl.trigger('owl.play',3500);
+        $(".btn3").click(function(){
+            owl.trigger('owl.next');
+        })
+        $(".btn4").click(function(){
+            owl.trigger('owl.prev');
+        })
+    });
+</script>
+
+
+</body>
+</html>

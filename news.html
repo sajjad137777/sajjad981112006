@@ -1,0 +1,439 @@
+﻿ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+
+<link href="img/---.ico" rel="shortcut icon">
+    
+<meta name="theme-color" content="#---">
+<meta name="msapplication-navbutton-color" content="#---">
+<meta name="apple-mobile-web-app-status-bar-style" content="#---">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link media="only screen and (max-width:991px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+<link media="only screen and (max-width:767px)" rel="stylesheet" type="text/css" href="css/mobile.css">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="fonts/roboto-slab/roboto.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/sinister.css">
+<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script>
+<script>wow = new WOW({animateClass:'animated',offset:100,callback:function(box){
+console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")} });wow.init();
+document.getElementById('moar').onclick = function() {var section = document.createElement('section');
+section.className = 'section--purple wow fadeInDown';this.parentNode.insertBefore(section, this);};
+</script>
+<script>
+$(function(){$('.smoothScroll').click(function(){if (location.pathname.replace(/^\//, '')==
+this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');if (target.length) {
+$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});}); 
+</script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            if (document.documentElement.clientWidth < 991) {
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '100%');
+                    $(".inp3").css('padding-right' , '10px');
+                    $(".inp3").css('padding-left' , '10px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '95px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else if(document.documentElement.clientWidth < 677){
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '25px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else{
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '169px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel {
+            padding: 6px 0 !important;
+            display: none;
+            -webkit-transition: all 0s ease 0s;
+            -moz-transition: all 0s ease 0s;
+            -o-transition: all 0s ease 0s;
+            transition: all 0s ease 0s;
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center" id="panel">
+    <a href="#"><button class="btn8">فروشگاه</button></a>
+    <a href="#"><button class="btn8">گیفت کارت</button></a>
+    <a href="#"><button class="btn8">اپل آیدی</button></a>
+    <a href="#"><button class="btn8">لوازم جانبی</button></a>
+    <a href="#"><button class="btn8">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn8">وبلاک</button></a>
+    <a href="#"><button class="btn8">قیمت روز</button></a>
+</div>
+<div class="col-md-12 col-xs-12 col-sm-12 text-center div1">
+
+    <i id="flip" class="fa fa-bars icn1"></i>
+
+    <img class="img1" src="img/font-icone.png" />
+    <a href="#"><button class="btn1">فروشگاه</button></a>
+    <a href="#"><button class="btn1">گیفت کارت</button></a>
+    <a href="#"><button class="btn1">اپل آیدی</button></a>
+    <a href="#"><button class="btn1">لوازم جانبی</button></a>
+    <a href="#"><button class="btn1">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn1">وبلاک</button></a>
+    <a href="#"><button class="btn1">قیمت روز</button></a>
+
+    <a href="#"><img class="img2" src="img/shopping-basket.png" /></a>
+    <a href="#"><img class="img2" src="img/user.png" /></a>
+    <img class="img16" src="img/searchh.svg" />
+
+
+        <input class="inp3" type="text" placeholder="جستجو" />
+        <img class="img17" src="img/close.svg" />
+
+
+</div>
+<!--<div class="col-md-12 col-xs-12 col-sm-12 text-center div2">-->
+    <!--<div class="div3">-->
+        <!--<button class="btn2"><img class="img3" src="img/search.svg" /></button>-->
+        <!--<div class="div4"></div>-->
+        <!--<div class="div5">-->
+            <!--<input class="inp1" type="text" placeholder="جستجو" />-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+<!--</div>-->
+
+
+
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div37">
+    <div class="col-md-12 col-sm-12 col-xs-12 div45 text-center">
+        <div class="col-md-12 col-sm-12 col-xs-12 div0">
+            <h3 class="p42">زنگ خطر برای رقبای آيفون به صدا در آمده است!</h3>
+            <p class="p45">چهارشنبه, 26 مهر 1396 </p>
+            <hr/>
+            <img class="img22" src="img/news/b2ap3_medium_iPhone-Buyers.jpg" />
+
+            <p class="p43">
+                خریداران آیفون در حال افزایش هستند و کاربرانی که ترجیح می‌دهند از سیستم عامل iOS استفاده کنند، روز به روز به تعدادشان اضافه می‌گردد.
+            </p>
+            <p class="p43">
+                طبق آمار جدیدی که منتشر شده، تعداد کاربران اکوسیستم اپل در هفت کشور دنیا در حال افزایش است. اعداد و ارقام اشاره شده در فواصل بین ژوئن تا آگوست سال 2017 استخراج شده است. بر اساس این آمار، کاربران سیستم عامل آی او اس در کشورهای زیر نسبت به سال گذشته افزایش یافته است:
+            </p>
+            <ul class="ul1">
+                <li>اسپانیا :‌4.4 درصد</li>
+                <li>چین: 4.3 درصد</li>
+                <li>اسپانیا :‌4.4 درصد</li>
+                <li>چین: 4.3 درصد</li>
+                <li>اسپانیا :‌4.4 درصد</li>
+                <li>چین: 4.3 درصد</li>
+            </ul>
+            <p class="p43">
+                به عنوان مثال در کشور آمریکا، استفاده کنندگان از سیستم عامل iOS از 31.3 در سال گذشته به 35 درصد در سال جاری رسیده اند.
+            </p>
+
+
+            <hr/>
+            <p class="p44">اشتراک گزاری : </p>
+            <a href="#"><i class="fa fa-link  icn4"></i></a>
+            <a href="#"><i class="fa fa-telegram  icn4"></i></a>
+            <a href="#"><i class="fa fa-envelope  icn4"></i></a>
+            <a href="#"><i class="fa fa-twitter-square icn4"></i></a>
+            <a href="#"><i class="fa fa-facebook-square  icn4"></i></a>
+            <hr/>
+
+
+            <p class="p44">بعد از مطالعه این مطلب : </p>
+
+            <div class="div46">
+                <img src="img/emoji/1.png" />
+                <p>عصبانی شدم(0)</p>
+            </div>
+            <div class="div46">
+                <img src="img/emoji/2.png" />
+                <p>ناراحت شدم(0)</p>
+            </div>
+            <div class="div46">
+                <img src="img/emoji/3.png" />
+                <p>غافلگیر شدم(0)</p>
+            </div>
+            <div class="div46">
+                <img src="img/emoji/4.png" />
+                <p>عاشقش شدم(0)</p>
+            </div>
+            <div class="div46">
+                <img src="img/emoji/5.png" />
+                <p>خوشحال شدم(0)</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div44">
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <p class="p11">مطالب مرتبط :</p>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+                    <img class="img14" src="img/img%20(4).png">
+                    <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                    <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+                    <img class="img14" src="img/img%20(4).png">
+                    <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                    <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+                    <img class="img14" src="img/img%20(4).png">
+                    <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                    <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 div21 div0 text-right">
+                    <img class="img14" src="img/img%20(4).png">
+                    <p class="p16">خرید و تحویل آنی انواع گیفت کارت‌های دلاری اپل</p>
+                    <p class="p17">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 div43">
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <p class="p11">دیدگاه ها :</p>
+        </div>
+
+
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center div27">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div30">
+                    <p class="p25">سجاد فهوری</p>
+                    <p class="p26">22:55 96/7/22</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div31">
+                    <p class="p24">
+                        لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center div27">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div30">
+                    <p class="p25">سجاد فهوری</p>
+                    <p class="p26">22:55 96/7/22</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center div31">
+                    <p class="p24">
+                        لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center div27">
+            <div class="col-md-6 col-sm-12 col-xs-12 text-right">
+                <label class="lbl1">آدرس ایمیل</label>
+                <input type="text" class="inp4" />
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 text-right">
+                <label class="lbl1">نام و نام خانوادگی</label>
+                <input type="text" class="inp4" />
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+                <textarea class="inp5" rows="9" placeholder="متن و نظر شما ..."></textarea>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <button class="btn9">ثبت و ارسال کامنت</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div22">
+    <p class="p18"> ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم.</p>
+
+    <p class="p19"><i class="fa fa-envelope icn2"></i> </p>
+    <p class="p19"><i class="fa fa-phone icn2"></i> </p>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div23 div0 text-center">
+    <p class="p20">خبرنامه وبسایت</p>
+    <p class="p21">با عضویت در خبرنامه اپل اِن آی سی میتوانید از تازه ترین اخبار و مطالب وبسایت و همچنین اعلامیه ها و تخفیف های فروشگاه مطلع شوید.</p>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <button class="btn7">اشتراک در خبرنامه</button>
+        <input class="inp2" type="text" placeholder="ایمیل" />
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <a href="#"><i class="fa fa-skype icn3"></i></a>
+        <a href="#"><i class="fa fa-youtube-play icn3"></i></a>
+        <a href="#"><i class="fa fa-facebook-square icn3"></i></a>
+        <a href="#"><i class="fa fa-twitter-square icn3"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square icn3"></i></a>
+        <a href="#"><i class="fa fa-instagram icn3"></i></a>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 text-right div25">
+       
+    </div>
+
+     <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <p class="p23">Copyright © 2017 Apple NIC. All rights reserved.</p>
+
+</div>
+
+<script>
+    function walkNode(node) {
+        if (node.nodeType == 3) {
+            // Do your replacement here
+            node.data = node.data.replace(/\d/g,convert);
+        }
+
+        // Also replace text in child nodes
+        for (var i = 0; i < node.childNodes.length; i++) {
+            walkNode(node.childNodes[i]);
+        }
+    }
+
+    walkNode(document.getElementsByTagName('body')[0]);
+
+    function convert(a){
+        return ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'][a];
+    }
+</script>
+
+<script src="js/swiper.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 20,
+        grabCursor: true
+    });
+</script>
+
+
+<script>
+
+
+    $(document).ready(function() {
+        var owl3= $("#owl-demo3");
+        owl3.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+        });
+        owl3.trigger('owl.play',3500);
+
+        $(".owlnext3").click(function(){
+            owl3.trigger('owl.next');
+        });
+        $(".owlprev3").click(function(){
+            owl3.trigger('owl.prev');
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>

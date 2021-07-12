@@ -1,0 +1,522 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+
+<link href="img/---.ico" rel="shortcut icon">
+    
+<meta name="theme-color" content="#---">
+<meta name="msapplication-navbutton-color" content="#---">
+<meta name="apple-mobile-web-app-status-bar-style" content="#---">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link media="only screen and (max-width:991px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+<link media="only screen and (max-width:767px)" rel="stylesheet" type="text/css" href="css/mobile.css">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="fonts/roboto-slab/roboto.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/sinister.css">
+<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script>
+<script>wow = new WOW({animateClass:'animated',offset:100,callback:function(box){
+console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")} });wow.init();
+document.getElementById('moar').onclick = function() {var section = document.createElement('section');
+section.className = 'section--purple wow fadeInDown';this.parentNode.insertBefore(section, this);};
+</script>
+<script>
+$(function(){$('.smoothScroll').click(function(){if (location.pathname.replace(/^\//, '')==
+this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');if (target.length) {
+$('html,body').animate({scrollTop: target.offset().top}, 1000);return false;}}});}); 
+</script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            if (document.documentElement.clientWidth < 991) {
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '100%');
+                    $(".inp3").css('padding-right' , '10px');
+                    $(".inp3").css('padding-left' , '10px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '95px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else if(document.documentElement.clientWidth < 677){
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '25px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }else{
+                $(".img16").click(function() {
+
+                    $(".inp3").css('width' , '80%');
+                    $(".inp3").css('padding-right' , '95px');
+                    $(".inp3").css('padding-left' , '169px');
+                    $(".img17").css('display' , 'block');
+                    $(".img17").css('left' , '122px');
+                });
+                $(".img17").click(function() {
+
+                    $(".inp3").css('width' , '0px');
+                    $(".inp3").css('padding-right' , '0px');
+                    $(".inp3").css('padding-left' , '0px');
+                    $(".img17").css('display' , 'none');
+                });
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel {
+            padding: 6px 0 !important;
+            display: none;
+            -webkit-transition: all 0s ease 0s;
+            -moz-transition: all 0s ease 0s;
+            -o-transition: all 0s ease 0s;
+            transition: all 0s ease 0s;
+
+        }
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 text-center" id="panel">
+    <a href="#"><button class="btn8">فروشگاه</button></a>
+    <a href="#"><button class="btn8">گیفت کارت</button></a>
+    <a href="#"><button class="btn8">اپل آیدی</button></a>
+    <a href="#"><button class="btn8">لوازم جانبی</button></a>
+    <a href="#"><button class="btn8">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn8">وبلاک</button></a>
+    <a href="#"><button class="btn8">قیمت روز</button></a>
+</div>
+<div class="col-md-12 col-xs-12 col-sm-12 text-center div1">
+
+    <i id="flip" class="fa fa-bars icn1"></i>
+
+    <img class="img1" src="img/font-icone.png" />
+    <a href="#"><button class="btn1">فروشگاه</button></a>
+    <a href="#"><button class="btn1">گیفت کارت</button></a>
+    <a href="#"><button class="btn1">اپل آیدی</button></a>
+    <a href="#"><button class="btn1">لوازم جانبی</button></a>
+    <a href="#"><button class="btn1">بازارچه دست دوم</button></a>
+    <a href="#"><button class="btn1">وبلاک</button></a>
+    <a href="#"><button class="btn1">قیمت روز</button></a>
+
+    <a href="#"><img class="img2" src="img/shopping-basket.png" /></a>
+    <a href="#"><img class="img2" src="img/user.png" /></a>
+    <img class="img16" src="img/searchh.svg" />
+
+
+        <input class="inp3" type="text" placeholder="جستجو" />
+        <img class="img17" src="img/close.svg" />
+
+
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div17"></div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div47">
+
+
+
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div0">
+
+        <div class="col-md-3 col-sm-6 col-xs-12 div53">
+            <div class="item2 div54 div0 div64">
+                <img src="img/iphone7-b.png" />
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span style="height: 14px;width: 14px;background: #F08080;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #ADD8E6;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #c7254e;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span class="spn1">
+                        <img class="img50" src="img/star.svg" />
+                        <span>3.5</span>
+                    </span><span class="spn2">از 280 رای</span>
+                </div>
+                <p class="p12" style="width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #414141;font-weight: 600;padding: 10px;">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 div53">
+            <div class="item2 div54 div0 div64">
+                <img src="img/iphone7-b.png" />
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span style="height: 14px;width: 14px;background: #F08080;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #ADD8E6;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #c7254e;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span class="spn1">
+                        <img class="img50" src="img/star.svg" />
+                        <span>3.5</span>
+                    </span><span class="spn2">از 280 رای</span>
+                </div>
+                <p class="p12" style="width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #414141;font-weight: 600;padding: 10px;">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12 div53">
+            <div class="item2 div54 div0 div64">
+                <img src="img/iphone7-b.png" />
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span style="height: 14px;width: 14px;background: #F08080;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #ADD8E6;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #c7254e;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span class="spn1">
+                        <img class="img50" src="img/star.svg" />
+                        <span>3.5</span>
+                    </span><span class="spn2">از 280 رای</span>
+                </div>
+                <p class="p12" style="width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #414141;font-weight: 600;padding: 10px;">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12 div53">
+            <div class="item2 div54 div0 div64">
+                <img src="img/iphone7-b.png" />
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span style="height: 14px;width: 14px;background: #F08080;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #ADD8E6;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #c7254e;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span class="spn1">
+                        <img class="img50" src="img/star.svg" />
+                        <span>3.5</span>
+                    </span><span class="spn2">از 280 رای</span>
+                </div>
+                <p class="p12" style="width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #414141;font-weight: 600;padding: 10px;">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12 div53">
+            <div class="item2 div54 div0 div64">
+                <img src="img/iphone7-b.png" />
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span style="height: 14px;width: 14px;background: #F08080;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #ADD8E6;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #c7254e;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span class="spn1">
+                        <img class="img50" src="img/star.svg" />
+                        <span>3.5</span>
+                    </span><span class="spn2">از 280 رای</span>
+                </div>
+                <p class="p12" style="width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #414141;font-weight: 600;padding: 10px;">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 div53">
+            <div class="item2 div54 div0 div64">
+                <img src="img/iphone7-b.png" />
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span style="height: 14px;width: 14px;background: #F08080;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #ADD8E6;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #c7254e;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span class="spn1">
+                        <img class="img50" src="img/star.svg" />
+                        <span>3.5</span>
+                    </span><span class="spn2">از 280 رای</span>
+                </div>
+                <p class="p12" style="width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #414141;font-weight: 600;padding: 10px;">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 div53">
+            <div class="item2 div54 div0 div64">
+                <img src="img/iphone7-b.png" />
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span style="height: 14px;width: 14px;background: #F08080;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #ADD8E6;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                    <span style="height: 14px;width: 14px;background: #c7254e;display: inline-block;margin: 0 auto;border-radius: 50%;"></span>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <span class="spn1">
+                        <img class="img50" src="img/star.svg" />
+                        <span>3.5</span>
+                    </span><span class="spn2">از 280 رای</span>
+                </div>
+                <p class="p12">دستگاه دلخواه خود را در کمترین زمان، با بهترین قیمت خریداری کنید یا حتی به فروش برسانید.</p>
+                <p class="p13">130000 تومان</p>
+                <p class="p14">130000 تومان</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center div0">
+
+        <ul class="ul2">
+            <li class="li2">پایان</li>
+            <li class="li2">بعدی</li>
+            <li class="li2">8</li>
+            <li class="li2">7</li>
+            <li class="li2">6</li>
+            <li class="li2">5</li>
+            <li class="li2">4</li>
+            <li class="li2">3</li>
+            <li class="li2 active1">2</li>
+            <li class="li2">1</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div17"></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12 div22">
+    <p class="p18"> ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم.</p>
+
+    <p class="p19"><i class="fa fa-envelope icn2"></i> </p>
+    <p class="p19"><i class="fa fa-phone icn2"></i></p>
+</div>
+
+<div class="col-md-12 col-sm-12 col-xs-12 div23 div0 text-center">
+    <p class="p20">خبرنامه وبسایت</p>
+    <p class="p21">با عضویت در خبرنامه اپل اِن آی سی میتوانید از تازه ترین اخبار و مطالب وبسایت و همچنین اعلامیه ها و تخفیف های فروشگاه مطلع شوید.</p>
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <button class="btn7">اشتراک در خبرنامه</button>
+        <input class="inp2" type="text" placeholder="ایمیل" />
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <a href="#"><i class="fa fa-skype icn3"></i></a>
+        <a href="#"><i class="fa fa-youtube-play icn3"></i></a>
+        <a href="#"><i class="fa fa-facebook-square icn3"></i></a>
+        <a href="#"><i class="fa fa-twitter-square icn3"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square icn3"></i></a>
+        <a href="#"><i class="fa fa-instagram icn3"></i></a>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 text-right div25">
+        
+    </div>
+
+     <div class="col-md-12 col-sm-12 col-xs-12 div24"></div>
+
+    <p class="p23">Copyright © 2017 Apple NIC. All rights reserved.</p>
+
+</div>
+
+<script>
+    function walkNode(node) {
+        if (node.nodeType == 3) {
+            // Do your replacement here
+            node.data = node.data.replace(/\d/g,convert);
+        }
+
+        // Also replace text in child nodes
+        for (var i = 0; i < node.childNodes.length; i++) {
+            walkNode(node.childNodes[i]);
+        }
+    }
+
+    walkNode(document.getElementsByTagName('body')[0]);
+
+    function convert(a){
+        return ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'][a];
+    }
+</script>
+
+
+<script>
+
+
+    $(document).ready(function() {
+
+        var owl1 = $("#owl-demo1");
+        var owl2 = $("#owl-demo2");
+        var owl3= $("#owl-demo3");
+
+        owl1.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+
+        });
+        owl2.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+        });
+        owl3.owlCarousel({
+            items : 4, //10 items above 1000px browser width
+            itemsDesktop : [1000,4], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination : false
+        });
+        owl1.trigger('owl.play',3500);
+        owl2.trigger('owl.play',3500);
+        owl3.trigger('owl.play',3500);
+
+
+
+
+
+        $(".owlnext1").click(function(){
+            owl1.trigger('owl.next');
+        });
+        $(".owlprev1").click(function(){
+            owl1.trigger('owl.prev');
+        });
+
+        $(".owlnext2").click(function(){
+            owl2.trigger('owl.next');
+        });
+        $(".owlprev2").click(function(){
+            owl2.trigger('owl.prev');
+        });
+
+        $(".owlnext3").click(function(){
+            owl3.trigger('owl.next');
+        });
+        $(".owlprev3").click(function(){
+            owl3.trigger('owl.prev');
+        });
+
+    });
+
+
+</script>
+<script>
+    $(document).ready(function() {
+        var owl = $("#owl-demo");
+        owl.owlCarousel({
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+        });
+        owl.trigger('owl.play',3500);
+        $(".btn3").click(function(){
+            owl.trigger('owl.next');
+        })
+        $(".btn4").click(function(){
+            owl.trigger('owl.prev');
+        })
+    });
+</script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+    }
+</script>
+
+
+</body>
+</html>
